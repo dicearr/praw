@@ -52,4 +52,4 @@ app.get('/api', (req, res, next) => {
 
 app.use('/', express.static(path.join(__dirname, '../praw-app/dist')))
 
-module.exports = http.createServer(app).listen(80)
+module.exports = http.createServer(app).listen(8080)
