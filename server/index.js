@@ -51,11 +51,5 @@ app.get('/api', (req, res, next) => {
 })
 
 app.use('/', express.static(path.join(__dirname, '../praw-app/dist')))
-app.use('/favicon.ico', (req, res) => { // favicon shortcircuit
-  res
-    .type('image/x-icon')
-    .status(301)
-    .end()
-})
 
 module.exports = http.createServer(app).listen(8080)
