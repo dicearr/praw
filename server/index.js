@@ -7,6 +7,7 @@ const helmet = require('helmet')
 const http = require('http') // TODO: Move to https Cacert
 const compression = require('compression')
 const path = require('path')
+const conf = require('../conf')
 
 mongoose.Promise = Promise
 mongoose.connect('mongodb://localhost/praw')
@@ -52,4 +53,4 @@ app.get('/api', (req, res, next) => {
 
 app.use('/', express.static(path.join(__dirname, '../praw-app/dist')))
 
-module.exports = http.createServer(app).listen(8080)
+module.exports = http.createServer(app).listen(conf.port)

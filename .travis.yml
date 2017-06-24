@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - '8'
+env:
+  - PRAW_PORT=80
 before_script:
 - cd praw-app && yarn && cd ..
 services:
