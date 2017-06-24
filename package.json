@@ -6,7 +6,7 @@
   "scripts": {
     "cover": "jest --coverage --forceExit",
     "coveralls": "yarn run cover && cat ./coverage/lcov.info | coveralls",
-    "test": "jest --forceExit",
+    "test": "jest --projects praw praw-app --forceExit",
     "start": "set NODE_ENV=production && node server/index.js"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "resourcejs": "^1.7.0"
   },
   "devDependencies": {
+    "@types/jest": "^20.0.2",
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
     "eslint": "^4.1.0",
