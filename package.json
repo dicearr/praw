@@ -1,0 +1,57 @@
+{
+  "name": "praw",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cover": "jest --coverage --forceExit",
+    "coveralls": "yarn run cover && cat ./coverage/lcov.info | coveralls",
+    "test": "jest --forceExit",
+    "start": "set NODE_ENV=production && node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dicearr/praw.git"
+  },
+  "author": "Diego Ceresuela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dicearr/praw/issues"
+  },
+  "homepage": "https://github.com/dicearr/praw#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "mongoose": "^4.10.8",
+    "resourcejs": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4",
+    "supertest": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "mocha": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "globals": {
+      "Exception": true
+    }
+  }
+}
