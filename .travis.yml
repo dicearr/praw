@@ -12,6 +12,6 @@ after_success:
 deploy:
   provider: heroku
   run:
-    - cd praw-app && yarn && ng build  && cd ..
+    - cd praw-app && yarn && yarn build  && cd ..
   api_key:
     secure: BWL92Xz+LA8wJDXJ/Y0RktWa4I6JUCbvYAHysH3pmqFw5PMd5H+LYm0ymwjIpC4OrFrE2YQoTEGb6Y7ibeBQC4WhMMzP1sXtGCTHZLCom7BcH63fDKOLG9Mi2fpJpLdgBK66EYOtU2JBuFKCbn4ksiGVmk5bw6vKSigLUXisQRnSD+9OcPZXmWio1M1GNyRjIJoP3orDL/gOmyX+mAYoGoxs9MX4F96kmG5cyhQ5PPfD20UeEhUkLX2xB2VbW3/NdpMDP9q6En2Lw/SEs9ad+ZChJ0l8V7dKRtmO7pE4FY5/5RQSd99RqahTkSKx1s030QN71wg0zY0WCSeWJonlNa66p4VArNg30Q2iaOx/b44QWYt8+OItAn90old99YxG+bMN3V1ETAzp9fYGqTZ4aJ6wj2wuZAW0NHXHBf60Wkn3eh1iHoTTUavNQzBX7wLJuUoLBultN+F7f9uZ5NkdzSdmjuJ8z1S37sYBSol5+cq8UOIsDTv71dr+PV10IKdSKC1Gi5fiv8PhHPzsgKiqHQF/XgxkOZ1BQgfgx2K9g2vbixvmLow+TaIBfkVzhn2ts/gyuG8HQbtrGR9jRaRDO0gUDQN5zL9vHvpN+g67/0QvalvvxSLXjbvlt/P6CnJWIQD6B9TZn0HgR54o6oIRDeoln6Rv81HUVvATjhc3yu8=
