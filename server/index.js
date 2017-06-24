@@ -10,7 +10,7 @@ const path = require('path')
 const conf = require('../conf')
 
 mongoose.Promise = Promise
-mongoose.connect('mongodb://localhost/praw')
+mongoose.connect(conf.mongourl)
 
 const app = express()
 app.use(helmet())
