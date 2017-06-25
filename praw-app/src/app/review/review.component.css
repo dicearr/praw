@@ -1,0 +1,11 @@
+div.review-container {
+  margin-top: 5px;
+}
+
+div.review-container span {
+  font-size: 200%;
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  cursor: pointer;
+}

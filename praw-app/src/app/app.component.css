@@ -1,0 +1,19 @@
+agm-map {
+  height: 500px;
+}
+
+div.info h2 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+div.info img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+div.container {
+  height: 500px;
+}

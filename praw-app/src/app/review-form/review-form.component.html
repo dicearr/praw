@@ -1,0 +1,39 @@
+<form (ngSubmit)="onSubmit()" style="padding-top: 10px">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input [(ngModel)]="author_name"
+      [ngModelOptions]="{standalone: true}"
+      type="text"
+      class="form-control"
+      id="name"
+      required
+      placeholder="Your name">
+  </div>
+
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    <input [(ngModel)]="rating"
+      [ngModelOptions]="{standalone: true}"
+      name="rating" id="rating"
+      class="hidden form-control">
+  </div>
+
+  <star-rating-comp
+    [starType]="'svg'"
+    [rating]="1"
+    (onRatingChange)="onChangeRate($event)">
+  </star-rating-comp>
+
+  <div class="form-group">
+    <label for="text">Review</label>
+    <input [ngModelOptions]="{standalone: true}"
+      [(ngModel)]="text"
+      type="textarea"
+      class="form-control"
+      id="text">
+  </div>
+
+  <button type="submit" class="btn btn-success">Send</button>
+
+</form>

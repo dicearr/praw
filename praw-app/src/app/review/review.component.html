@@ -1,0 +1,22 @@
+<div class="review-container">
+  <div class="row">
+    <div class="col-md-3">
+      <span (click)="viewText = !viewText && text" class="glyphicon glyphicon-eye-open"></span>
+    </div>
+    <div *ngIf="!viewText" class="col-md-9">
+      <div class="row" style="text-align: center">
+        <h4>{{name}}</h4>
+      </div>
+      <div class="row">
+        <star-rating-comp
+          [starType]="'svg'"
+          [rating]="rating"
+          [disabled]="true">
+        </star-rating-comp>
+      </div>
+    </div>
+    <div class="col-md-9" *ngIf="viewText"  style="max-height: 65px; overflow: auto">
+      <p>{{text}}</p>
+    <div>
+  </div>
+</div>

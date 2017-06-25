@@ -17,6 +17,11 @@ app.use(helmet())
 app.use(compression())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use((req, res, next) => { // While developing front is served from local:4200
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+  next()
+})
 
 const paths = {}
 const definitions = {}

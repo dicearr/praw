@@ -6,7 +6,7 @@
   "scripts": {
     "cover": "jest --coverage --forceExit",
     "coveralls": "yarn run cover && cat ./coverage/lcov.info | coveralls",
-    "test": "jest --projects praw praw-app --forceExit",
+    "test": "jest --projects praw --forceExit",
     "start": "set NODE_ENV=production && node server/index.js",
     "heroku-postbuild": "cd praw-app && yarn && yarn build  && cd .."
   },
