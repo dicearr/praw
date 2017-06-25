@@ -28,6 +28,11 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
 
   ngOnInit() {
+    this.loader.getNearbyPlaces({
+      lat: this.lat,
+      lng: this.lng
+    }, this.aux.nativeElement)
+      .then((np) => this.nearbyPlaces = np);
     if (this.geo !== undefined) {
       this.geo.getCurrentPosition((pos) => {
         const position = {
