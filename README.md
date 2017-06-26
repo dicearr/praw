@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/dicearr/praw.svg?branch=master)](https://travis-ci.org/dicearr/praw)
 [![Coverage Status](https://coveralls.io/repos/github/dicearr/praw/badge.svg?branch=master)](https://coveralls.io/github/dicearr/praw?branch=master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](http://praw.herokuapp.com)
+[![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](https://praw.herokuapp.com)
 
 ![PRAW](/docs/praw.PNG?raw=true)
 > Tourists, restaurants, reviews and so on
@@ -24,8 +24,8 @@ Once you have `built` the application you can launch it by running:
 $ yarn start
 ```
 This will allow to access to the webpage in `http://localhost`.
-If you don't want to launch the application locally you can deploy it to [Heroku](https://www.heroku.com). By the way, to acomplish with continuous deployment principle this application is deployed with every commit (successfully tested) in [![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](http://praw.herokuapp.com)
+If you don't want to launch the application locally you can deploy it to [Heroku](https://www.heroku.com). By the way, to acomplish with continuous deployment principle this application is deployed with every commit (successfully tested) in [![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](https://praw.herokuapp.com)
 
 ## Documentation
-- The REST API has been documented using Swagger. It is available on `http://localhost/api` or  `http://praw.herokuapp.com/api`
+- The REST API has been documented using Swagger. It is available on `http://localhost/api` or  `https://praw.herokuapp.com/api`
 - Technical documentation about the frontend can be found in `docs` folder. It has been generated using [Compodoc](https://compodoc.github.io/website/).
