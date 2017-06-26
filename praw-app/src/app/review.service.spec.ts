@@ -1,11 +1,13 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { ReviewService } from './review.service';
+import { HttpModule } from '@angular/http';
 
 describe('ReviewService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ReviewService]
+      providers: [ReviewService],
+      imports: [HttpModule]
     });
   });
 

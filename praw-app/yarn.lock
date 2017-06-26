@@ -190,7 +190,11 @@
   version "3.26.14"
   resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.26.14.tgz#611cb24214bfc0bada86105696b66325f9ad372d"
 
-"@types/jest@20.0.2":
+"@types/jasmine@^2.5.53":
+  version "2.5.53"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.53.tgz#4e0cefad09df5ec48c8dd40433512f84b1568d61"
+
+"@types/jest@^20.0.2":
   version "20.0.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-20.0.2.tgz#86c751121fb53dbd39bb1a08c45083da13f2dc67"
 
