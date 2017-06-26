@@ -8,7 +8,8 @@
     "coveralls": "yarn run cover && cat ./coverage/lcov.info | coveralls",
     "test": "jest --projects praw --forceExit",
     "start": "set NODE_ENV=production && node server/index.js",
-    "heroku-postbuild": "cd praw-app && yarn && yarn build  && cd .."
+    "build": "yarn && yarn heroku-postbuild",
+    "heroku-postbuild": "cd praw-app && yarn && yarn build --prod  && cd .."
   },
   "engines": {
     "node": "8.x"
