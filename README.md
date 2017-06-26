@@ -7,6 +7,11 @@
 ![PRAW](/docs/praw.PNG?raw=true)
 > Tourists, restaurants, reviews and so on
 
+## Dependencies
+Some software is required in order to run the application:
+1. [Yarn](https://yarnpkg.com/lang/en/) to manage Node packages.
+2. [MongoDB](https://www.mongodb.com) to store the new reviews.
+
 ## Deployment
 Before launching the application you will need to install all the dependencies and compile the Angular application itself. There is a `build` script prepared for this.
 ```
