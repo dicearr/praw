@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest --runInBand",
+    "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "docs": "compodoc -p src/tsconfig.app.json -d ../docs/"
@@ -58,7 +58,7 @@
     "preset": "jest-preset-angular",
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
     "transformIgnorePatterns": [
-      "node_modules/(?!@ngrx|@agm)"
+      "node_modules[\\/]+(?!@ngrx|@agm)"
     ]
   }
 }
