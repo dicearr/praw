@@ -23,10 +23,9 @@ Once you have `built` the application you can launch it by running:
 ```
 $ yarn start
 ```
-This will allow to access to the webpage in `http://localhost`. Some important urls are:
-
-- `/api` - With the API [Swagger](http://swagger.io/docs/specification/what-is-swagger/) documentation
-- `/api/review` - With the `review` endpoint
-- `/` - With the webpage itself
-
+This will allow to access to the webpage in `http://localhost`.
 If you don't want to launch the application locally you can deploy it to [Heroku](https://www.heroku.com). By the way, to acomplish with continuous deployment principle this application is deployed with every commit (successfully tested) in [![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](http://praw.herokuapp.com)
+
+## Documentation
+- The REST API has been documented using Swagger. It is available on `http://localhost/api` or  `http://praw.herokuapp.com/api`
+- Technical documentation about the frontend can be found in `docs` folder. It has been generated using [Compodoc](https://compodoc.github.io/website/).
