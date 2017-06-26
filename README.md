@@ -4,6 +4,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](http://praw.herokuapp.com)
 
+![PRAW](/docs/praw.PNG?raw=true)
 > Tourists, restaurants, reviews and so on
 
 ## Deployment
