@@ -1,9 +1,9 @@
 # praw
-[![Standard](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-<br/>
+
 [![Build Status](https://travis-ci.org/dicearr/praw.svg?branch=master)](https://travis-ci.org/dicearr/praw)
 [![Coverage Status](https://coveralls.io/repos/github/dicearr/praw/badge.svg?branch=master)](https://coveralls.io/github/dicearr/praw?branch=master)
 [![Heroku](http://heroku-badge.herokuapp.com/?app=praw&style=flat&svg=1&root=index.html)](https://praw.herokuapp.com)
+[![Standard](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ![PRAW](/docs/praw.PNG?raw=true)
 > Tourists, restaurants, reviews and so on
