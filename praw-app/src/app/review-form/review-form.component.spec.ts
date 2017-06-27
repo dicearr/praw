@@ -3,8 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReviewFormComponent } from './review-form.component';
 import { FormsModule }   from '@angular/forms';
 import { StarRatingModule } from 'angular-star-rating';
-import { ReviewService } from '../review.service';
+import { ReviewService } from '../services/review.service';
 import { HttpModule } from '@angular/http';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ReviewFormComponent', () => {
   let component: ReviewFormComponent;
@@ -16,7 +17,8 @@ describe('ReviewFormComponent', () => {
       imports: [
         StarRatingModule,
         HttpModule,
-        FormsModule
+        FormsModule,
+        RouterTestingModule
       ],
       providers: [
         ReviewService

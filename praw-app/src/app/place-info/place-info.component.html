@@ -1,0 +1,13 @@
+<div *ngIf="error" class="alert alert-danger" style="margin: 5px">
+  <strong>Error!</strong> {{error}}
+</div>
+  <div class="row">
+    <h2>{{place.name}}</h2>
+  </div>
+  <div class="tab-pane" style="overflow-x: hidden; overflow-y: auto; max-height: 350px">
+    <review *ngFor="let review of place.reviews"
+      [rating]="review.rating"
+      [name]="review.author_name"
+      [text]="review.text">
+    </review>
+  </div>

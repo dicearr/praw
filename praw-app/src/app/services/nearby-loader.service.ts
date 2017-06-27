@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { MapsAPILoader } from '@agm/core';
 import { ReviewService } from './review.service';
 import { } from '@types/googlemaps';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class NearbyLoaderService {
@@ -34,22 +35,24 @@ export class NearbyLoaderService {
     })
   }
 
+  getPlacesService(map) {
+    if (this.ps === undefined) {
+      this.ps = new google.maps.places.PlacesService(map)
+    }
+    return this.ps
+  }
+
   getPlaceInfo(placeId, map) : Promise<any> {
-    return new Promise(async (resolve) => {
+    return Observable.create(async (observer) => {
       await this.loader.load();
-      if (this.ps === undefined) {
-        this.ps = new google.maps.places.PlacesService(map);
-      }
-      this.ps.getDetails({ placeId }, (res, status) => {
-        this.rs.getReviews({ place_id: placeId })
-          .subscribe((localReviews) => {
-            res.reviews = res.reviews.concat(localReviews.json());
-            resolve(res);
-          }, (err) => {
-            console.error(err);
-            resolve(res);
-          })
+      this.getPlacesService(map).getDetails({ placeId }, (res, status) => {
+        if (status.toString() !== 'OK') {
+          observer.error(status)
+        } else {
+          observer.next(res)
+          observer.complete()
+        }
       });
-    })
+    });
   }
 }

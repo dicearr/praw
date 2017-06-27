@@ -36,7 +36,7 @@ describe('Review REST API', () => {
       const res = await request(server)
         .get('/api/review')
         .set('Accept', 'application/json')
-        .expect(200)
+      assert(res.status === 200 || res.status === 206)
       assert.isArray(res.body)
     })
   })

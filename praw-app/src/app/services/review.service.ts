@@ -12,11 +12,11 @@ export class ReviewService {
     return this.http.post(this.url, review);
   }
 
-  getReviews(query) {
+  getReviews(id) {
     const params = new URLSearchParams();
-    params.append('place_id', query.place_id);
+    params.append('place_id', id);
     const options = new RequestOptions({ params });
-    return this.http.get(this.url, options);
+    return this.http.get(this.url, options).map(res => res.json());
   }
 
 }

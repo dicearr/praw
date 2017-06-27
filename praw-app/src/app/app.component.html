@@ -17,35 +17,31 @@
       [class.col-md-12] = "!placeClicked"
       [latitude]="lat" [longitude]="lng">
         <agm-marker
-          *ngFor="let place of nearbyPlaces"
+          *ngFor="let place of nearbyPlaces; let i = index"
           [latitude]="place.lat" [longitude]="place.lng"
           [title]="place.title"
-          (markerClick)="onClicked($event, place.id)">
+          (markerClick)="onClicked($event, i)">
         </agm-marker>
         <agm-marker [latitude]="lat" [longitude]="lng" markerClickable="false"></agm-marker>
     </agm-map>
-    <div *ngIf="placeClicked" class="col-md-5 info">
-      <div class="row">
-        <h2>{{place.name}}</h2>
-      </div>
+    <div *ngIf="placeClicked" class="col-md-5">
       <ul class="nav nav-tabs">
         <li class="nav-item" [class.active]="review">
-          <a class="nav-link" (click)="review = true" href="#reviews">Reviews</a>
+          <a class="nav-link"
+            (click)="review = true"
+            [routerLink]="['review/:id', { id: place.id }]">
+          Reviews
+          </a>
         </li>
         <li class="nav-item" [class.active]="!review">
-          <a class="nav-link" (click)="review = false" href="#write">Write your own</a>
+          <a class="nav-link"
+            (click)="review = false"
+            [routerLink]="['review/:id/add', { id: place.id }]">
+              Write your own
+          </a>
         </li>
       </ul>
-      <div class="tab-pane" *ngIf="review" style="overflow-x: hidden; overflow-y: auto; max-height: 350px">
-        <review *ngFor="let review of place.reviews"
-          [rating]="review.rating"
-          [name]="review.author_name"
-          [text]="review.text">
-        </review>
-      </div>
-      <div class="tab-pane" *ngIf="!review" style="overflow-x: hidden; overflow-y: auto">
-        <review-form [place_id]="place.place_id"></review-form>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

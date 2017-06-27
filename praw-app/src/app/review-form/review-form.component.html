@@ -1,3 +1,7 @@
+<div *ngIf="error" class="alert alert-danger" style="margin: 5px">
+  <strong>Error!</strong> {{error}}
+</div>
+
 <form (ngSubmit)="onSubmit()" style="padding-top: 10px">
 
   <div class="form-group">

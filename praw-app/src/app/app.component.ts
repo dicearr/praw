@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild, HostListener, AfterViewInit } from '@angular/core';
-import { NearbyLoaderService } from './nearby-loader.service';
+import { NearbyLoaderService } from './services/nearby-loader.service';
 import { AgmMap } from '@agm/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { AgmMap } from '@agm/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements AfterViewInit, OnInit {
+export class AppComponent implements OnInit {
   title: string = 'PRAW';
   lat: number = 51.923682;
   lng: number = 4.467429000000038;
@@ -16,15 +17,19 @@ export class AppComponent implements AfterViewInit, OnInit {
   nearbyPlaces: Array<any> = [];
   place: any;
   placeClicked: boolean = false;
-  review: boolean = true;
+  error: string;
 
   @ViewChild('aux') aux: ElementRef;
   @ViewChild(AgmMap) agm: AgmMap;
 
-  constructor(private loader: NearbyLoaderService) {
+  constructor(private loader: NearbyLoaderService, private router: Router) {
     if (navigator.geolocation !== undefined) {
       this.geo = navigator.geolocation;
     }
+  }
+
+  onError(error) {
+    this.error = error;
   }
 
   ngOnInit() {
@@ -47,9 +52,6 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.redrawMap();
   }
 
-  ngAfterViewInit() {
-  }
-
   async redrawMap() {
     await this.agm.triggerResize();
     // Cast needed because _mapsWrapper is a private prop
@@ -57,12 +59,9 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
 
   onClicked(ev, id) {
-    this.loader.getPlaceInfo(id, this.aux.nativeElement)
-      .then((info) => {
-        this.placeClicked = true;
-        this.place = info;
-        this.redrawMap();
-      });
+    this.place = this.nearbyPlaces[id]
+    this.router.navigate(['review/:id', { id: this.place.id }])
+    this.placeClicked = true
   }
 
   @HostListener('window:resize', ['$event'])
