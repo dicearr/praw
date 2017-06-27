@@ -18,20 +18,21 @@ export class AppComponent implements OnInit {
   place: any;
   placeClicked: boolean = false;
 
-  @ViewChild('aux') aux: ElementRef;
+  private aux;
   @ViewChild(AgmMap) agm: AgmMap;
 
   constructor(private loader: NearbyLoaderService, private router: Router) {
     if (navigator.geolocation !== undefined) {
       this.geo = navigator.geolocation;
     }
+    this.aux = document.createElement('div')
   }
 
   ngOnInit() {
     this.loader.getNearbyPlaces({
       lat: this.lat,
       lng: this.lng
-    }, this.aux.nativeElement)
+    }, this.aux)
       .then((np) => this.nearbyPlaces = np);
     if (this.geo !== undefined) {
       this.geo.getCurrentPosition((pos) => {
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
           lat: pos.coords.latitude
         }
         Object.assign(this, position);
-        this.loader.getNearbyPlaces(position, this.aux.nativeElement)
+        this.loader.getNearbyPlaces(position, this.aux)
           .then((np) => this.nearbyPlaces = np);
       });
     }
