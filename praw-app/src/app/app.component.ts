@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   nearbyPlaces: Array<any> = [];
   place: any;
   placeClicked: boolean = false;
-  error: string;
 
   @ViewChild('aux') aux: ElementRef;
   @ViewChild(AgmMap) agm: AgmMap;
@@ -26,10 +25,6 @@ export class AppComponent implements OnInit {
     if (navigator.geolocation !== undefined) {
       this.geo = navigator.geolocation;
     }
-  }
-
-  onError(error) {
-    this.error = error;
   }
 
   ngOnInit() {

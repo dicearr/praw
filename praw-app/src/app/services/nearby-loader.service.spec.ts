@@ -3,6 +3,7 @@ import { TestBed, inject } from '@angular/core/testing';
 import { NearbyLoaderService } from './nearby-loader.service';
 import { AgmCoreModule, MapsAPILoader } from '@agm/core';
 import { HttpModule } from '@angular/http';
+import { Observable } from 'rxjs';
 
 import { ReviewService } from './review.service';
 
