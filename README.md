@@ -29,3 +29,14 @@ If you don't want to launch the application locally you can deploy it to [Heroku
 ## Documentation
 - The REST API has been documented using Swagger. It is available on `http://localhost/api` or  `https://praw.herokuapp.com/api`
 - Technical documentation about the frontend can be found in `docs` folder. It has been generated using [Compodoc](https://compodoc.github.io/website/).
+
+## Technology
+All the backend has been developed on top of [NodeJS](https://nodejs.org/en/). I have used several node packages.
+- `express` - For the web server itself
+- `helmet` - Adds security to `express`
+- `resourcejs` - Allows you to build a REST API easy
+- `mongoose` - To connect with MongoDB
+
+The frontend has been developed using [Angular](https://angular.io/).
+- `@agm/core` - To integrate Google places/map API
+- `angular-star-rating` - To rate with stars
