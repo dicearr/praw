@@ -85,6 +85,9 @@
                                     <a href="../components/AppComponent.html" >AppComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/ReviewComponent.html" >ReviewComponent</a>
                                 </li>
                                 <li class="link">
@@ -110,6 +113,9 @@
                                     <a href="../injectables/NearbyLoaderService.html"  data-type="entity-link" class="active" >NearbyLoaderService</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                </li>
+                                <li class="link">
                                     <a href="../injectables/ReviewService.html" >ReviewService</a>
                                 </li>
                         </ul>
@@ -117,6 +123,9 @@
             
             
             
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -208,6 +217,9 @@
                                            <a href="../components/AppComponent.html" >AppComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/ReviewComponent.html" >ReviewComponent</a>
                                        </li>
                                        <li class="link">
@@ -233,6 +245,9 @@
                                            <a href="../injectables/NearbyLoaderService.html"  data-type="entity-link" class="active" >NearbyLoaderService</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../injectables/ReviewService.html" >ReviewService</a>
                                        </li>
                                </ul>
@@ -240,6 +255,9 @@
                    
                    
                    
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -286,7 +304,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/nearby-loader.service.ts</code>
+            <code>src/app/services/nearby-loader.service.ts</code>
         </p>
 
 
@@ -301,7 +319,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/nearby-loader.service.ts:9</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/services/nearby-loader.service.ts:10</a></div>
                                         </td>
                                     </tr>
             
@@ -330,7 +348,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/nearby-loader.service.ts:13</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/services/nearby-loader.service.ts:14</a></div>
                                         </td>
                                     </tr>
             
@@ -339,6 +357,37 @@
             
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b> getPlacesService</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>getPlacesService(map: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/services/nearby-loader.service.ts:38</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
             
                                         </div>
                                 </td>
@@ -361,7 +410,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/nearby-loader.service.ts:37</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/services/nearby-loader.service.ts:45</a></div>
                                         </td>
                                     </tr>
             
@@ -398,7 +447,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/nearby-loader.service.ts:9</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/services/nearby-loader.service.ts:10</a></div>
                                         </td>
                                     </tr>
                         </tbody>
@@ -410,6 +459,7 @@
 import { MapsAPILoader } from &#x27;@agm/core&#x27;;
 import { ReviewService } from &#x27;./review.service&#x27;;
 import { } from &#x27;@types/googlemaps&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
 
 @Injectable()
 export class NearbyLoaderService {
@@ -442,23 +492,25 @@ export class NearbyLoaderService {
     })
   }
 
+  getPlacesService(map) {
+    if (this.ps &#x3D;&#x3D;&#x3D; undefined) {
+      this.ps &#x3D; new google.maps.places.PlacesService(map)
+    }
+    return this.ps
+  }
+
   getPlaceInfo(placeId, map) : Promise&lt;any&gt; {
-    return new Promise(async (resolve) &#x3D;&gt; {
+    return Observable.create(async (observer) &#x3D;&gt; {
       await this.loader.load();
-      if (this.ps &#x3D;&#x3D;&#x3D; undefined) {
-        this.ps &#x3D; new google.maps.places.PlacesService(map);
-      }
-      this.ps.getDetails({ placeId }, (res, status) &#x3D;&gt; {
-        this.rs.getReviews({ place_id: placeId })
-          .subscribe((localReviews) &#x3D;&gt; {
-            res.reviews &#x3D; res.reviews.concat(localReviews.json());
-            resolve(res);
-          }, (err) &#x3D;&gt; {
-            console.error(err);
-            resolve(res);
-          })
+      this.getPlacesService(map).getDetails({ placeId }, (res, status) &#x3D;&gt; {
+        if (status.toString() !&#x3D;&#x3D; &#x27;OK&#x27;) {
+          observer.error(status)
+        } else {
+          observer.next(res)
+          observer.complete()
+        }
       });
-    })
+    });
   }
 }
 </code></pre>

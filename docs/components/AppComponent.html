@@ -85,6 +85,9 @@
                                     <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/ReviewComponent.html" >ReviewComponent</a>
                                 </li>
                                 <li class="link">
@@ -110,6 +113,9 @@
                                     <a href="../injectables/NearbyLoaderService.html" >NearbyLoaderService</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                </li>
+                                <li class="link">
                                     <a href="../injectables/ReviewService.html" >ReviewService</a>
                                 </li>
                         </ul>
@@ -117,6 +123,9 @@
             
             
             
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -208,6 +217,9 @@
                                            <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/ReviewComponent.html" >ReviewComponent</a>
                                        </li>
                                        <li class="link">
@@ -233,6 +245,9 @@
                                            <a href="../injectables/NearbyLoaderService.html" >NearbyLoaderService</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../injectables/ReviewService.html" >ReviewService</a>
                                        </li>
                                </ul>
@@ -240,6 +255,9 @@
                    
                    
                    
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -300,7 +318,6 @@
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/docs/ts/latest/api/core/index/AfterViewInit-interface.html" target="_blank" >AfterViewInit</a></code>
                 <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
     </p>
 
@@ -351,7 +368,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(loader: any)</code>
+                            <code>constructor(loader: any, router: any)</code>
                         </td>
                     </tr>
                             <tr>
@@ -404,37 +421,6 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <b> ngAfterViewInit</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-    <code>ngAfterViewInit()</code>
-                        </td>
-                    </tr>
-    
-    
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/app.component.ts:50</a></div>
-                                </td>
-                            </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
                             <b><span class="modifier"></span> redrawMap</b>
                         </td>
                     </tr>
@@ -448,7 +434,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/app.component.ts:53</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/app.component.ts:50</a></div>
                                 </td>
                             </tr>
     
@@ -479,7 +465,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/app.component.ts:59</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/app.component.ts:56</a></div>
                                 </td>
                             </tr>
     
@@ -516,7 +502,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/app.component.ts:69</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/app.component.ts:63</a></div>
                                 </td>
                             </tr>
     
@@ -603,7 +589,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app.component.ts:16</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -628,7 +614,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -653,7 +639,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/app.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/app.component.ts:15</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -673,7 +659,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app.component.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/app.component.ts:17</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -693,7 +679,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/app.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/app.component.ts:18</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -714,31 +700,6 @@
                         <tr>
                             <td class="col-md-4">
                                 <i>Default value : </i><code>false</code>
-                            </td>
-                        </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/app.component.ts:18</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b> review</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>review:     <code>boolean</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>true</code>
                             </td>
                         </tr>
                             <tr>
@@ -768,7 +729,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -779,8 +740,9 @@
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit, ElementRef, ViewChild, HostListener, AfterViewInit } from &#x27;@angular/core&#x27;;
-import { NearbyLoaderService } from &#x27;./nearby-loader.service&#x27;;
+import { NearbyLoaderService } from &#x27;./services/nearby-loader.service&#x27;;
 import { AgmMap } from &#x27;@agm/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
 
 @Component({
   selector: &#x27;app-root&#x27;,
@@ -788,7 +750,7 @@ import { AgmMap } from &#x27;@agm/core&#x27;;
   styleUrls: [&#x27;./app.component.css&#x27;]
 })
 
-export class AppComponent implements AfterViewInit, OnInit {
+export class AppComponent implements OnInit {
   title: string &#x3D; &#x27;PRAW&#x27;;
   lat: number &#x3D; 51.923682;
   lng: number &#x3D; 4.467429000000038;
@@ -796,12 +758,11 @@ export class AppComponent implements AfterViewInit, OnInit {
   nearbyPlaces: Array&lt;any&gt; &#x3D; [];
   place: any;
   placeClicked: boolean &#x3D; false;
-  review: boolean &#x3D; true;
 
   @ViewChild(&#x27;aux&#x27;) aux: ElementRef;
   @ViewChild(AgmMap) agm: AgmMap;
 
-  constructor(private loader: NearbyLoaderService) {
+  constructor(private loader: NearbyLoaderService, private router: Router) {
     if (navigator.geolocation !&#x3D;&#x3D; undefined) {
       this.geo &#x3D; navigator.geolocation;
     }
@@ -827,9 +788,6 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.redrawMap();
   }
 
-  ngAfterViewInit() {
-  }
-
   async redrawMap() {
     await this.agm.triggerResize();
     // Cast needed because _mapsWrapper is a private prop
@@ -837,12 +795,9 @@ export class AppComponent implements AfterViewInit, OnInit {
   }
 
   onClicked(ev, id) {
-    this.loader.getPlaceInfo(id, this.aux.nativeElement)
-      .then((info) &#x3D;&gt; {
-        this.placeClicked &#x3D; true;
-        this.place &#x3D; info;
-        this.redrawMap();
-      });
+    this.place &#x3D; this.nearbyPlaces[id]
+    this.router.navigate([&#x27;review/:id&#x27;, { id: this.place.id }])
+    this.placeClicked &#x3D; true
   }
 
   @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
@@ -855,8 +810,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;!--The whole content below can be removed with the new code.--&gt;
-&lt;nav class&#x3D;&quot;navbar navbar-default&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;nav class&#x3D;&quot;navbar navbar-default&quot;&gt;
   &lt;div class&#x3D;&quot;container-fluid&quot;&gt;
     &lt;div class&#x3D;&quot;navbar-header&quot;&gt;
       &lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;#&quot;&gt;
@@ -865,7 +819,6 @@ export class AppComponent implements AfterViewInit, OnInit {
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/nav&gt;
-&lt;div #aux&gt;&lt;/div&gt;
 &lt;div class&#x3D;&quot;container&quot;&gt;
   &lt;div class&#x3D;&quot;row&quot;&gt;
     &lt;agm-map #map
@@ -874,35 +827,31 @@ export class AppComponent implements AfterViewInit, OnInit {
       [class.col-md-12] &#x3D; &quot;!placeClicked&quot;
       [latitude]&#x3D;&quot;lat&quot; [longitude]&#x3D;&quot;lng&quot;&gt;
         &lt;agm-marker
-          *ngFor&#x3D;&quot;let place of nearbyPlaces&quot;
+          *ngFor&#x3D;&quot;let place of nearbyPlaces; let i &#x3D; index&quot;
           [latitude]&#x3D;&quot;place.lat&quot; [longitude]&#x3D;&quot;place.lng&quot;
           [title]&#x3D;&quot;place.title&quot;
-          (markerClick)&#x3D;&quot;onClicked($event, place.id)&quot;&gt;
+          (markerClick)&#x3D;&quot;onClicked($event, i)&quot;&gt;
         &lt;/agm-marker&gt;
         &lt;agm-marker [latitude]&#x3D;&quot;lat&quot; [longitude]&#x3D;&quot;lng&quot; markerClickable&#x3D;&quot;false&quot;&gt;&lt;/agm-marker&gt;
     &lt;/agm-map&gt;
-    &lt;div *ngIf&#x3D;&quot;placeClicked&quot; class&#x3D;&quot;col-md-5 info&quot;&gt;
-      &lt;div class&#x3D;&quot;row&quot;&gt;
-        &lt;h2&gt;{{place.name}}&lt;/h2&gt;
-      &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;placeClicked&quot; class&#x3D;&quot;col-md-5&quot;&gt;
       &lt;ul class&#x3D;&quot;nav nav-tabs&quot;&gt;
         &lt;li class&#x3D;&quot;nav-item&quot; [class.active]&#x3D;&quot;review&quot;&gt;
-          &lt;a class&#x3D;&quot;nav-link&quot; (click)&#x3D;&quot;review &#x3D; true&quot; href&#x3D;&quot;#reviews&quot;&gt;Reviews&lt;/a&gt;
+          &lt;a class&#x3D;&quot;nav-link&quot;
+            (click)&#x3D;&quot;review &#x3D; true&quot;
+            [routerLink]&#x3D;&quot;[&#x27;review/:id&#x27;, { id: place.id }]&quot;&gt;
+          Reviews
+          &lt;/a&gt;
         &lt;/li&gt;
         &lt;li class&#x3D;&quot;nav-item&quot; [class.active]&#x3D;&quot;!review&quot;&gt;
-          &lt;a class&#x3D;&quot;nav-link&quot; (click)&#x3D;&quot;review &#x3D; false&quot; href&#x3D;&quot;#write&quot;&gt;Write your own&lt;/a&gt;
+          &lt;a class&#x3D;&quot;nav-link&quot;
+            (click)&#x3D;&quot;review &#x3D; false&quot;
+            [routerLink]&#x3D;&quot;[&#x27;review/:id/add&#x27;, { id: place.id }]&quot;&gt;
+              Write your own
+          &lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
-      &lt;div class&#x3D;&quot;tab-pane&quot; *ngIf&#x3D;&quot;review&quot; style&#x3D;&quot;overflow-x: hidden; overflow-y: auto; max-height: 350px&quot;&gt;
-        &lt;review *ngFor&#x3D;&quot;let review of place.reviews&quot;
-          [rating]&#x3D;&quot;review.rating&quot;
-          [name]&#x3D;&quot;review.author_name&quot;
-          [text]&#x3D;&quot;review.text&quot;&gt;
-        &lt;/review&gt;
-      &lt;/div&gt;
-      &lt;div class&#x3D;&quot;tab-pane&quot; *ngIf&#x3D;&quot;!review&quot; style&#x3D;&quot;overflow-x: hidden; overflow-y: auto&quot;&gt;
-        &lt;review-form [place_id]&#x3D;&quot;place.place_id&quot;&gt;&lt;/review-form&gt;
-      &lt;/div&gt;
+      &lt;router-outlet&gt;&lt;/router-outlet&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -932,8 +881,8 @@ export class AppComponent implements AfterViewInit, OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--The whole content below can be removed with the new code.--><nav class="navbar navbar-default">  <div class="container-fluid">    <div class="navbar-header">      <a class="navbar-brand" href="#">        {{title}}      </a>    </div>  </div></nav><div #aux></div><div class="container">  <div class="row">    <agm-map #map      [zoom] = "12"      [class.col-md-7] = "placeClicked"      [class.col-md-12] = "!placeClicked"      [latitude]="lat" [longitude]="lng">        <agm-marker          *ngFor="let place of nearbyPlaces"          [latitude]="place.lat" [longitude]="place.lng"          [title]="place.title"          (markerClick)="onClicked($event, place.id)">        </agm-marker>        <agm-marker [latitude]="lat" [longitude]="lng" markerClickable="false"></agm-marker>    </agm-map>    <div *ngIf="placeClicked" class="col-md-5 info">      <div class="row">        <h2>{{place.name}}</h2>      </div>      <ul class="nav nav-tabs">        <li class="nav-item" [class.active]="review">          <a class="nav-link" (click)="review = true" href="#reviews">Reviews</a>        </li>        <li class="nav-item" [class.active]="!review">          <a class="nav-link" (click)="review = false" href="#write">Write your own</a>        </li>      </ul>      <div class="tab-pane" *ngIf="review" style="overflow-x: hidden; overflow-y: auto; max-height: 350px">        <review *ngFor="let review of place.reviews"          [rating]="review.rating"          [name]="review.author_name"          [text]="review.text">        </review>      </div>      <div class="tab-pane" *ngIf="!review" style="overflow-x: hidden; overflow-y: auto">        <review-form [place_id]="place.place_id"></review-form>      </div>    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ReviewComponent', 'selector': 'review'},{'name': 'ReviewFormComponent', 'selector': 'review-form'}];
+        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-default">  <div class="container-fluid">    <div class="navbar-header">      <a class="navbar-brand" href="#">        {{title}}      </a>    </div>  </div></nav><div class="container">  <div class="row">    <agm-map #map      [zoom] = "12"      [class.col-md-7] = "placeClicked"      [class.col-md-12] = "!placeClicked"      [latitude]="lat" [longitude]="lng">        <agm-marker          *ngFor="let place of nearbyPlaces; let i = index"          [latitude]="place.lat" [longitude]="place.lng"          [title]="place.title"          (markerClick)="onClicked($event, i)">        </agm-marker>        <agm-marker [latitude]="lat" [longitude]="lng" markerClickable="false"></agm-marker>    </agm-map>    <div *ngIf="placeClicked" class="col-md-5">      <ul class="nav nav-tabs">        <li class="nav-item" [class.active]="review">          <a class="nav-link"            (click)="review = true"            [routerLink]="[\'review/:id\', { id: place.id }]">          Reviews          </a>        </li>        <li class="nav-item" [class.active]="!review">          <a class="nav-link"            (click)="review = false"            [routerLink]="[\'review/:id/add\', { id: place.id }]">              Write your own          </a>        </li>      </ul>      <router-outlet></router-outlet>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'PlaceInfoComponent', 'selector': 'place-info'},{'name': 'ReviewComponent', 'selector': 'review'},{'name': 'ReviewFormComponent', 'selector': 'review-form'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

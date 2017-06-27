@@ -85,6 +85,9 @@
                                     <a href="../components/AppComponent.html" >AppComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/ReviewComponent.html"  data-type="entity-link" class="active" >ReviewComponent</a>
                                 </li>
                                 <li class="link">
@@ -110,6 +113,9 @@
                                     <a href="../injectables/NearbyLoaderService.html" >NearbyLoaderService</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                </li>
+                                <li class="link">
                                     <a href="../injectables/ReviewService.html" >ReviewService</a>
                                 </li>
                         </ul>
@@ -117,6 +123,9 @@
             
             
             
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -208,6 +217,9 @@
                                            <a href="../components/AppComponent.html" >AppComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/PlaceInfoComponent.html" >PlaceInfoComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/ReviewComponent.html"  data-type="entity-link" class="active" >ReviewComponent</a>
                                        </li>
                                        <li class="link">
@@ -233,6 +245,9 @@
                                            <a href="../injectables/NearbyLoaderService.html" >NearbyLoaderService</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../injectables/PlaceResolver.html" >PlaceResolver</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../injectables/ReviewService.html" >ReviewService</a>
                                        </li>
                                </ul>
@@ -240,6 +255,9 @@
                    
                    
                    
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -569,7 +587,7 @@ export class ReviewComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="review-container">  <div class="row">    <div class="col-md-3">      <span (click)="viewText = !viewText && text" class="glyphicon glyphicon-eye-open"></span>    </div>    <div *ngIf="!viewText" class="col-md-9">      <div class="row" style="text-align: center">        <h4>{{name}}</h4>      </div>      <div class="row">        <star-rating-comp          [starType]="\'svg\'"          [rating]="rating"          [disabled]="true">        </star-rating-comp>      </div>    </div>    <div class="col-md-9" *ngIf="viewText"  style="max-height: 65px; overflow: auto">      <p>{{text}}</p>    <div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ReviewComponent', 'selector': 'review'},{'name': 'ReviewFormComponent', 'selector': 'review-form'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'PlaceInfoComponent', 'selector': 'place-info'},{'name': 'ReviewComponent', 'selector': 'review'},{'name': 'ReviewFormComponent', 'selector': 'review-form'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ReviewComponent'};
 </script>
