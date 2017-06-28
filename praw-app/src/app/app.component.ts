@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   lng: number = 4.467429000000038;
   geo: any;
   nearbyPlaces: Array<any> = [];
-  place: any;
+  place: any = {};
   placeClicked: boolean = false;
 
   private aux;
@@ -63,6 +63,10 @@ export class AppComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   public onResize(event) {
     this.redrawMap();
+  }
+
+  componentAdded() {
+    console.log(arguments)
   }
 
 }

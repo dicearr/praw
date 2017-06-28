@@ -22,18 +22,16 @@
         </agm-marker>
         <agm-marker [latitude]="lat" [longitude]="lng" markerClickable="false"></agm-marker>
     </agm-map>
-    <div *ngIf="placeClicked" class="col-md-5">
+    <div class="col-md-5">
       <ul class="nav nav-tabs">
-        <li class="nav-item" [class.active]="review">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
           <a class="nav-link"
-            (click)="review = true"
             [routerLink]="['review/:id', { id: place.id }]">
           Reviews
           </a>
         </li>
-        <li class="nav-item" [class.active]="!review">
+        <li class="nav-item" routerLinkActive="active">
           <a class="nav-link"
-            (click)="review = false"
             [routerLink]="['review/:id/add', { id: place.id }]">
               Write your own
           </a>
