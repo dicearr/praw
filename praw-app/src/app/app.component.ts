@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
   onClicked(ev, id) {
     this.place = this.nearbyPlaces[id]
-    this.router.navigate(['review/:id', { id: this.place.id }])
+    this.router.navigate(['#/review/:id', { id: this.place.id }])
     this.placeClicked = true
   }
 

@@ -30,7 +30,7 @@ export class ReviewFormComponent implements OnInit {
     const { rating, text, author_name, place_id } = this;
     this.rs.addReview({ rating, text, author_name, place_id })
       .subscribe((res) => {
-        this.router.navigate(['review/:id', { id: this.place_id }])
+        this.router.navigate(['#/review/:id', { id: this.place_id }])
       }, (err) => {
         this.error = 'Imposible to submit your review'
       })

@@ -16,10 +16,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlaceResolver } from './place.resolver';
 
 const routes: Routes = [{
-  path: 'review/:id/add',
+  path: '#/review/:id/add',
   component: ReviewFormComponent
 }, {
-  path: 'review/:id',
+  path: '#/review/:id',
   component: PlaceInfoComponent,
   resolve: {
     place: PlaceResolver

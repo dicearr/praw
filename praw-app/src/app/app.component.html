@@ -26,13 +26,13 @@
       <ul class="nav nav-tabs">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
           <a class="nav-link"
-            [routerLink]="['review/:id', { id: place.id }]">
+            [routerLink]="['#/review/:id', { id: place.id }]">
           Reviews
           </a>
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link"
-            [routerLink]="['review/:id/add', { id: place.id }]">
+            [routerLink]="['#/review/:id/add', { id: place.id }]">
               Write your own
           </a>
         </li>
