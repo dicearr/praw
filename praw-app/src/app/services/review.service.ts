@@ -4,7 +4,7 @@ import { Http, Response, URLSearchParams, RequestOptions } from '@angular/http';
 @Injectable()
 export class ReviewService {
 
-  private url: string = 'http://localhost/api/review';
+  private url: string = '/api/review';
 
   constructor(private http: Http) { }
 
